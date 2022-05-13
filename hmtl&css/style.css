@@ -1,0 +1,25 @@
+/* #listId {
+  border: 1px solid black;
+  width: fit-content;
+} */
+
+.list-class {
+  border: 1px solid black;
+  width: fit-content;
+}
+
+#buttonId {
+  border-radius: 5px;
+}
+
+* {
+  color: black;
+}
+
+#divId p {
+  color: pink;
+}
+
+#divId1 > p {
+  color: green;
+}
