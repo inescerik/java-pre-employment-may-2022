@@ -1,4 +1,5 @@
 import { CodeBlock, dracula } from "react-code-blocks";
+import CustomList from "../components/CustomList";
 
 function Exercise6() {
   //If you want to use me, be aware I am a string not an Array.
@@ -11,7 +12,14 @@ function Exercise6() {
     "Eddie Lee",
     "Hannah Reid",
   ];`;
-
+  const usersArray = [
+    "Christopher Washington",
+    "Ben Hayes",
+    "Skye Roberts",
+    "Hugo Gray",
+    "Eddie Lee",
+    "Hannah Reid",
+  ];
   return (
     <div>
       <div>
@@ -31,7 +39,7 @@ function Exercise6() {
           accordingly.
         </p>
         <div className="solution-container">
-          <i>You can delete me and put the solution in this container.</i>
+          <CustomList users={usersArray} />
         </div>
       </div>
     </div>

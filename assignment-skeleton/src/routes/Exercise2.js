@@ -1,3 +1,8 @@
+import { useState } from "react";
+
+function afisareMesaj() {
+  alert("You cliked me. Thanks!");
+}
 function Exercise2() {
   return (
     <div>
@@ -8,7 +13,9 @@ function Exercise2() {
         </p>
       </div>
       <div className="solution-container">
-        <i>You can delete me and put the solution in this container.</i>
+        <button onClick={afisareMesaj} id="buttonIdex2">
+          Click me
+        </button>
       </div>
     </div>
   );

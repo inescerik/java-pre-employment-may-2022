@@ -9,7 +9,9 @@ function Exercise1() {
         </p>
       </div>
       <div className="solution-container">
-        <i>You can delete me and put the solution in this container.</i>
+        <div id="square">
+          <p>Hello, World!!</p>
+        </div>
       </div>
     </div>
   );

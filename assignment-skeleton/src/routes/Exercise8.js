@@ -1,5 +1,5 @@
 import { CodeBlock, dracula } from "react-code-blocks";
-
+import React from "react";
 function Exercise8() {
   //If you want to use me, be aware I am a string not an Array.
   //So please just copy me in other variable
@@ -35,6 +35,38 @@ function Exercise8() {
       favoriteColor: "green",
     },
   ]`;
+  const usersArray = [
+    {
+      id: 1,
+      name: "Christopher Washington",
+      favoriteColor: "red",
+    },
+    {
+      id: 2,
+      name: "Ben Hayes",
+      favoriteColor: "blue",
+    },
+    {
+      id: 3,
+      name: "Skye Roberts",
+      favoriteColor: "yellow",
+    },
+    {
+      id: 4,
+      name: "Hugo Gray",
+      favoriteColor: "violet",
+    },
+    {
+      id: 5,
+      name: "Eddie Lee",
+      favoriteColor: "pink",
+    },
+    {
+      id: 6,
+      name: "Hannah Reid",
+      favoriteColor: "green",
+    },
+  ];
 
   return (
     <div>
@@ -53,7 +85,11 @@ function Exercise8() {
         />
 
         <div className="solution-container">
-          <i>You can delete me and put the solution in this container.</i>
+        <ul>{usersArray.map(user => (<li key={user.id} style={{ color:`${user.favoriteColor}` }}>{user.name} </li>))}</ul>
+   
+        
+            
+          
         </div>
       </div>
     </div>

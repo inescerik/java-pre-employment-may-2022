@@ -1,3 +1,18 @@
+import { useState } from "react";
+
+function IncrementButton() {
+  const [count, setCount] = useState(1);
+
+  function Increment() {
+    setCount(count + 1);
+  }
+  return (
+    <div>
+      <p>{count}</p>
+      <button onClick={Increment}>+</button>
+    </div>
+  );
+}
 function Exercise4() {
   return (
     <div>
@@ -7,7 +22,7 @@ function Exercise4() {
           clicked, and display the number.
         </p>
         <div className="solution-container">
-          <i>You can delete me and put the solution in this container.</i>
+          <IncrementButton></IncrementButton>
         </div>
       </div>
     </div>

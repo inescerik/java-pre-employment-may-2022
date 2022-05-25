@@ -1,3 +1,23 @@
+import React from "react";
+import ReactDOM from "react-dom";
+
+class App extends React.Component {
+  render() {
+    const array = [];
+    for (var i = 1; i <= 4; i++) {
+      const index = i;
+      array.push(<button onClick={() => alert(index)}> {i}</button>);
+    }
+
+    return array;
+  }
+}
+
+function ONPress() {
+  const rootElement = document.getElementById("addButton");
+  ReactDOM.render(<App />, rootElement);
+}
+
 function Exercise3() {
   return (
     <div>
@@ -8,8 +28,10 @@ function Exercise3() {
           the button.
         </p>
       </div>
-      <div className="solution-container">
-        <i>You can delete me and put the solution in this container.</i>
+      <div className="solution-container" id="addButton">
+        <button onClick={ONPress} id="butonEx3">
+          Press
+        </button>
       </div>
     </div>
   );

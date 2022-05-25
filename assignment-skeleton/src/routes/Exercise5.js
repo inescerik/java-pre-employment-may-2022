@@ -1,5 +1,21 @@
 import { CodeBlock, dracula } from "react-code-blocks";
-
+function NameList() {
+  const users = [
+    "Christopher Washington",
+    "Ben Hayes",
+    "Skye Roberts",
+    "Hugo Gray",
+    "Eddie Lee",
+    "Hannah Reid",
+  ];
+  return (
+    <div>
+      {users.map((name) => (
+        <li key={name}> {name} </li>
+      ))}
+    </div>
+  );
+}
 function Exercise5() {
   //If you want to use me, be aware I am a string not an Array.
   //So please just copy me in other variable
@@ -28,7 +44,7 @@ function Exercise5() {
           Use the map function to render the array in an unordered list.
         </p>
         <div className="solution-container">
-          <i>You can delete me and put the solution in this container.</i>
+          <NameList></NameList>
         </div>
       </div>
     </div>

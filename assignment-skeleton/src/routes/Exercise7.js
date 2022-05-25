@@ -1,4 +1,10 @@
 function Exercise7() {
+function submitForm(){
+  const firstName=document.getElementById("FirstName").value;
+  const lastName=document.getElementById("LastName").value;
+  alert(`Hello, ${firstName} ${lastName}!`);
+
+}
   return (
     <div>
       <div>
@@ -9,7 +15,12 @@ function Exercise7() {
           the corresponding inputs.
         </p>
         <div className="solution-container">
-          <i>You can delete me and put the solution in this container.</i>
+
+          <form>
+            <input  type="text" placeholder="Insert your first name here" name="FirstName" id="FirstName"/>
+            <input  type="text" placeholder="Insert yor last name here" name="LastName" id="LastName"/>
+            <button id="buttonEx7" type="submit" onClick={submitForm}   >Greet me</button>
+          </form>
         </div>
       </div>
     </div>
